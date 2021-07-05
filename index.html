@@ -7,351 +7,562 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta
+      name="keywords"
+      content="Bootstrap, Landing page, Template, Registration, Landing"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="author" content="Grayrids" />
     <title>Yeasi Tech</title>
-    <link rel="icon" href="img/favicon.png" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="css/animate.css" />
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <!-- themify CSS -->
-    <link rel="stylesheet" href="css/themify-icons.css" />
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/line-icons.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/nivo-lightbox.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="stylesheet" href="css/all.css" />
-    <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-VNJCBZHPCY"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-VNJCBZHPCY");
-    </script>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/color-switcher.css" />
+    <link rel="stylesheet" href="css/menu_sideslide.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
 
   <body>
-    <!--::header part start::-->
-    <header class="main_menu home_menu">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-12">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="logo" />
-              </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
+    <!-- Header Section Start -->
+    <header id="slider-area">
+      <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#slider-area">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#portfolios">Portfolio</a>
+              </li>
 
-              <div
-                class="
-                  collapse
-                  navbar-collapse
-                  main-menu-item
-                  justify-content-end
-                "
-                id="navbarSupportedContent"
-              >
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#review">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#testimonial"
+                  >Testimonial</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
+        </div>
+      </nav>
+
+      <!-- Main Carousel Section -->
+      <div id="carousel-area">
+        <div
+          id="carousel-slider"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carousel-slider"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carousel-slider" data-slide-to="1"></li>
+            <li data-target="#carousel-slider" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img src="img/slider/bg-1.jpg" alt="" />
+              <div class="carousel-caption text-center">
+                <h3 class="wow fadeInRight" data-wow-delay="0.2s">
+                  Mobile App
+                </h3>
+                <h2 class="wow fadeInRight" data-wow-delay="0.4s">
+                  Development
+                </h2>
+                <h4 class="wow fadeInRight" data-wow-delay="0.6s">
+                  Comes with All Essential Sections & Elements
+                </h4>
+                <a
+                  href="#"
+                  class="btn btn-lg btn-border wow fadeInRight"
+                  data-wow-delay="1.2s"
+                  >Get Started!</a
+                >
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider/bg-1.jpg" alt="" />
+              <div class="carousel-caption text-center">
+                <h3 class="wow fadeInRight" data-wow-delay="0.2s">Ecommerce</h3>
+                <h2 class="wow fadeInRight" data-wow-delay="0.4s">
+                  Web Development
+                </h2>
+                <h4 class="wow fadeInRight" data-wow-delay="0.6s">
+                  Comes with All Essential Sections & Elements
+                </h4>
+                <a
+                  href="#"
+                  class="btn btn-lg btn-border wow fadeInRight"
+                  data-wow-delay="1.2s"
+                  >Get Started!</a
+                >
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider/bg-1.jpg" alt="" />
+              <div class="carousel-caption text-center">
+                <h3 class="wow fadeInDown" data-wow-delay="0.3s">Ready For</h3>
+                <h2 class="wow fadeInRight" data-wow-delay="0.6s">
+                  Digital Marketing
+                </h2>
+                <h4 class="wow fadeInUp" data-wow-delay="0.6s">
+                  App, Business, SaaS and Landing Pages
+                </h4>
+                <a
+                  href="#"
+                  class="btn btn-lg btn-border wow fadeInRight"
+                  data-wow-delay="1.2s"
+                  >Get Started!</a
+                >
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carousel-slider"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control" aria-hidden="true"
+              ><i class="lni-chevron-left"></i
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carousel-slider"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control" aria-hidden="true"
+              ><i class="lni-chevron-right"></i
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </header>
-    <!-- Header part end-->
+    <!-- Header Section End -->
 
-    <!-- banner part start-->
-    <section class="banner_part">
+    <!-- Services Section Start -->
+    <section id="services" class="section">
       <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-xl-6 col-md-6">
-            <div class="banner_text">
-              <div class="banner_text_iner">
-                <h2>Creative minds <span>at your service</span></h2>
-                <!-- <h3>Go Digital</h3> -->
-                <a href="#" class="btn_1"
-                  >learn more <i class="ti-angle-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-md-6">
-            <div class="banner_bg">
-              <img src="img/banner_img.png" alt="banner" />
-            </div>
-          </div>
+        <div class="section-header">
+          <h2 class="section-title">Our Services</h2>
+          <span>Services</span>
+          <!-- <p class="section-subtitle">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy
+          </p> -->
         </div>
-      </div>
-      <div class="hero-app-1 custom-animation">
-        <img src="img/animate_icon/icon_1.png" alt="" />
-      </div>
-      <div class="hero-app-5 custom-animation2">
-        <img src="img/animate_icon/icon_3.png" alt="" />
-      </div>
-      <div class="hero-app-7 custom-animation3">
-        <img src="img/animate_icon/icon_2.png" alt="" />
-      </div>
-      <div class="hero-app-8 custom-animation">
-        <img src="img/animate_icon/icon_4.png" alt="" />
-      </div>
-    </section>
-    <!-- banner part start-->
-
-    <!-- cta part start-->
-    <section class="cta_part">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-12">
-            <div class="cta_part_iner">
-              <div class="cta_part_text">
-                <p>Our Features</p>
-                <h1>Building brands with purpose</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- cta part end-->
-
-    <!-- service_part part start-->
-    <section class="service_part section_bg_2 section_padding">
-      <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="single_service_part">
-              <div class="single_service_part_iner">
-                <span class="ti-mobile"></span>
-                <h3>Web Development</h3>
-                <p>
-                  Website is the door through which the world gets to know about
-                  your businesses. Get personalized, dynamic and interactive
-                  websites that give your business a better approach to the
-                  audiences.
-                </p>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div
+              class="item-boxes services-item wow fadeInDown"
+              data-wow-delay="0.2s"
+            >
+              <div class="icon color-1">
+                <i class="lni-cloud"></i>
               </div>
+              <h4>Cloud Architechture</h4>
+              <p>
+                Cloud Architechture is very Important part of software development, 
+                if it is done in a correct way you can save a lot of money and at the same time you can make it secure
+              </p>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="single_service_part">
-              <div class="single_service_part_iner">
-                <span class="ti-layers"></span>
-                <h3>App Development</h3>
-                <p>
-                  With the advancements of technology, business strategies have
-                  changed a lot. Among the new age strategies, mobile app is
-                  definitely one of the most effective ones. Get interactive
-                  apps that suits your business and help it to grow better.
-                </p>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div
+              class="item-boxes services-item wow fadeInDown"
+              data-wow-delay="0.4s"
+            >
+              <div class="icon color-2">
+                <i class="lni-cog"></i>
               </div>
+              <h4>Web Development</h4>
+              <p>
+                Website is the door through which the world gets to know about
+                your businesses. Get personalized, dynamic and interactive
+                websites that give your business a better approach to the
+                audiences.
+              </p>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="single_service_part">
-              <div class="single_service_part_iner">
-                <span class="ti-lock"></span>
-                <h3>SEO</h3>
-                <p>
-                  Ranking your pages or websites on the search engines are easy
-                  only when you know the algorithms. And we know that better.
-                  Talk to our experts today.
-                </p>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div
+              class="item-boxes services-item wow fadeInDown"
+              data-wow-delay="0.6s"
+            >
+              <div class="icon color-3">
+                <i class="lni-stats-up"></i>
               </div>
+              <h4>SEO</h4>
+              <p>
+                Ranking your pages or websites on the search engines are easy
+                only when you know the algorithms. And we know that better. Talk
+                to our experts today.
+              </p>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="single_service_part">
-              <div class="single_service_part_iner">
-                <span class="ti-headphone"></span>
-                <h3>Social Media</h3>
-                <p>
-                  Run campaigns for your business on various social media
-                  platforms like Facebook, Instagram, Twitter, YouTube. Make
-                  connections to the larger audiences. Promote brands, create
-                  ads that attracts potential customers.
-                </p>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div
+              class="item-boxes services-item wow fadeInDown"
+              data-wow-delay="0.8s"
+            >
+              <div class="icon color-4">
+                <i class="lni-display"></i>
               </div>
+              <h4>UI/UX Design</h4>
+              <p>
+                UI/UX is a very crucial aspect of your mobile and web application. In order to make your app successful, you must provide an amazing user interface and user experience through your app. By understanding the need of your target audience and their market preference, you can make your app interactive and more engaging.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div
+              class="item-boxes services-item wow fadeInDown"
+              data-wow-delay="1s"
+            >
+              <div class="icon color-5">
+                <i class="lni-tab"></i>
+              </div>
+              <h4>Mobile App Development</h4>
+              <p>
+                With the advancements of technology, business strategies have
+                changed a lot. Among the new age strategies, mobile app is
+                definitely one of the most effective ones. Get interactive apps
+                that suits your business and help it to grow better.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div
+              class="item-boxes services-item wow fadeInDown"
+              data-wow-delay="1.2s"
+            >
+              <div class="icon color-6">
+                <i class="lni-briefcase"></i>
+              </div>
+              <h4>Digital Marketing</h4>
+              <p>
+                Run campaigns for your business on various social media
+                platforms like Facebook, Instagram, Twitter, YouTube. Make
+                connections to the larger audiences. Promote brands, create ads
+                that attracts potential customers.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- service_part part end-->
+    <!-- Services Section End -->
 
-    <!-- about part start-->
-    <section class="about_part">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <div class="about_img">
-              <img src="img/about_img_1.png" class="img_1" alt="" />
-              <img src="img/about_img_2.jpg" class="img_2" alt="" />
-              <h2>
-                5 Years Working <br />
-                Experience
-              </h2>
+    <!-- Features Section Start -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose Us</h2>
+          <span>Why</span>
+          <!-- <p class="section-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dignissimos debitis.
+          </p> -->
+        </div>
+        <div class="row">
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-layout"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-layout"></i></div>
+                <h4>Refreshing Design</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et magna aliqua.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="offset-lg-1 col-lg-4">
-            <div class="about_text">
-              <h5>About our company</h5>
-              <h2>Make the customer the hero of your story</h2>
-              <h4>
-                Established in the year of "2015", Yeasitech is one of most
-                advanced and reliable software companies, headquartered in
-                kolkata. We proudly claim our glory into the field of App
-                Development, Web Development, E-commerce Development etc. Our
-                dynamic and passion-driven team of experts are always at your
-                services to generate results out of the glitch.
-              </h4>
-              <p>
-                We respect your dream and understand the value of your business.
-                We share our hands with agencies and businesses to help them to
-                achieve their goals and to witness the development and growth
-                like never before. Talk to us today, share your business details
-                and requirements with our experts and we deliver you nothing but
-                the best. We are just one call away.
-              </p>
-              <a href="#" class="btn_1"
-                >learn more <i class="ti-angle-right"></i>
+          <!-- End featured -->
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-tab"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-tab"></i></div>
+                <h4>Fully Responsive</h4>
+                <p>
+                  A fully responsive website will rescale itself to preserve the user experience and look and feel across all devices — with no irritating zooming, scrolling or resizing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End featured -->
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-rocket"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-rocket"></i></div>
+                <h4>Fast & Smooth</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End featured -->
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-database"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-database"></i></div>
+                <h4>SEO Optimized</h4>
+                <p>
+                  SEO stands for “search engine optimization.” In simple terms, it means the process of improving your site to increase its visibility when people search for products.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End featured -->
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-leaf"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-leaf"></i></div>
+                <h4>Clean Code</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End featured -->
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-pencil"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-pencil"></i></div>
+                <h4>Free 24/7 Support</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End featured -->
+        </div>
+      </div>
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolios" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Portfolio</h2>
+          <span>Portfolio</span>
+          <!-- <p class="section-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dignissimos debitis.
+          </p> -->
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Portfolio Controller/Buttons -->
+            <div class="controls text-center">
+              <a
+                class="filter active btn btn-common btn-effect"
+                data-filter="all"
+              >
+                All
+              </a>
+              <a class="filter btn btn-common btn-effect" data-filter=".design">
+                App
+              </a>
+              <a
+                class="filter btn btn-common btn-effect"
+                data-filter=".development"
+              >
+                Web
+              </a>
+              <a class="filter btn btn-common btn-effect" data-filter=".print">
+                Graphics
               </a>
             </div>
+            <!-- Portfolio Controller/Buttons Ends-->
           </div>
         </div>
-      </div>
-      <div class="hero-app-7 custom-animation">
-        <img src="img/animate_icon/icon_7.png" alt="" />
-      </div>
-      <div class="hero-app-8 custom-animation2">
-        <img src="img/animate_icon/icon_4.png" alt="" />
-      </div>
-      <div class="hero-app-6 custom-animation3">
-        <img src="img/animate_icon/icon_5.png" alt="" />
-      </div>
-    </section>
-    <!-- about part start-->
 
-    <!-- service_part start-->
-    <section class="our_latest_work section_padding">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-lg-5">
-            <div class="section_tittle text-center">
-              <p>recent work</p>
-              <h2>Creative work for client</h2>
+        <!-- Portfolio Recent Projects -->
+        <div id="portfolio" class="row">
+          <div class="col-lg-4 col-md-6 col-xs-12 mix development">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="img/portfolio/img-1.jpg" alt="" />
+                <div class="single-content">
+                  <div class="fancy-table">
+                    <div class="table-cell">
+                      <div class="zoom-icon">
+                        <a class="lightbox" href="img/portfolio/img-1.jpg"
+                          ><i class="lni-zoom-in item-icon"></i
+                        ></a>
+                      </div>
+                      <a href="#">View Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="single_work">
-              <div class="row align-items-center">
-                <div class="offset-lg-1 col-lg-4 col-md-6">
-                  <div class="single_work_demo">
-                    <!-- <h5>Mockup design</h5> -->
-                    <h3>CoachFirst Web and Mobile App</h3>
-                    <p>
-                      CoachFirst was designed to help coaches around the world
-                      succeed in their business by providing our coaches with an
-                      all inclusive hub which makes crafting a schedule easy,
-                      and managing finances a breeze.
-                    </p>
-                    <a
-                      href="https://www.coachfirst.com/"
-                      class="btn_3"
-                      target="_blank"
-                      >learn more <span class="flaticon-slim-right"></span>
-                    </a>
-                  </div>
-                </div>
-                <div class="offset-lg-1 col-lg-6 col-md-6">
-                  <div class="demo_img">
-                    <img src="img/coachfirst.png" alt="coachfirst" />
+          <div class="col-lg-4 col-md-6 col-xs-12 mix design">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="img/portfolio/img-2.jpg" alt="" />
+                <div class="single-content">
+                  <div class="fancy-table">
+                    <div class="table-cell">
+                      <div class="zoom-icon">
+                        <a class="lightbox" href="img/portfolio/img-2.jpg"
+                          ><i class="lni-zoom-in item-icon"></i
+                        ></a>
+                      </div>
+                      <a href="#">View Project</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="single_work">
-              <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
-                  <div class="demo_img">
-                    <img src="img/empeal.png" alt="empeal" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="single_work_demo">
-                    <!--  <h5>Mockup design</h5> -->
-                    <h3>
-                      Empeal Web and Mobile Application
-                    </h3>
-                    <p>
-                        <h4>Measure it to Manage it</h4>
-                        Improve health and wellbeing and boost success and productivity with Empeal's simple, customisable digital health solution.
-                    </p>
-                    <a href="https://empeal.com/" class="btn_3" target="_blank"
-                      >learn more <span class="flaticon-slim-right"></span>
-                    </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12 mix print">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="img/portfolio/img-3.jpg" alt="" />
+                <div class="single-content">
+                  <div class="fancy-table">
+                    <div class="table-cell">
+                      <div class="zoom-icon">
+                        <a class="lightbox" href="img/portfolio/img-3.jpg"
+                          ><i class="lni-zoom-in item-icon"></i
+                        ></a>
+                      </div>
+                      <a href="#">View Project</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="single_work">
-              <div class="row align-items-center">
-                <div class="offset-lg-1 col-lg-4 col-md-6">
-                  <div class="single_work_demo">
-                    <!-- <h5>Mockup design</h5> -->
-                    <h3>
-                      Nshtri
-                    </h3>
-                    <p>
-                      We Nshtri a platform that displays the work of painters, calligraphers,
-                      designers and photographers located inside and outside Saudi Arabia to become the first Saudi website and online shop to get the paintings, 
-                      which are multiple in their materials and designs according to their different and varied classifications with a focus on the quality of service and the product at the same time.
-                    </p>
-                    <a href="http://nshtri.com/" class="btn_3"
-                      >learn more <span class="flaticon-slim-right"></span>
-                    </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12 mix development design">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="img/portfolio/img-4.jpg" alt="" />
+                <div class="single-content">
+                  <div class="fancy-table">
+                    <div class="table-cell">
+                      <div class="zoom-icon">
+                        <a class="lightbox" href="img/portfolio/img-4.jpg"
+                          ><i class="lni-zoom-in item-icon"></i
+                        ></a>
+                      </div>
+                      <a href="#">View Project</a>
+                    </div>
                   </div>
                 </div>
-                <div class="offset-lg-1 col-lg-6 col-md-6">
-                  <div class="demo_img">
-                    <img src="img/nshtri.png" alt="demo" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12 mix print">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="img/portfolio/img-5.jpg" alt="" />
+                <div class="single-content">
+                  <div class="fancy-table">
+                    <div class="table-cell">
+                      <div class="zoom-icon">
+                        <a class="lightbox" href="img/portfolio/img-5.jpg"
+                          ><i class="lni-zoom-in item-icon"></i
+                        ></a>
+                      </div>
+                      <a href="#">View Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12 mix design">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="img/portfolio/img-6.jpg" alt="" />
+                <div class="single-content">
+                  <div class="fancy-table">
+                    <div class="table-cell">
+                      <div class="zoom-icon">
+                        <a class="lightbox" href="img/portfolio/img-6.jpg"
+                          ><i class="lni-zoom-in item-icon"></i
+                        ></a>
+                      </div>
+                      <a href="#">View Project</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -359,455 +570,370 @@
           </div>
         </div>
       </div>
+      <!-- Container Ends -->
     </section>
-    <!-- upcoming_event part start-->
+    <!-- Portfolio Section Ends -->
 
-    <!-- happy_client counter start -->
-    <section class="happy_client">
+    <!-- Counter Section Start -->
+    <div class="counters section bg-defult">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-sm-6 col-md-4">
-            <div class="single_happy_client">
-              <figure class="_imgDiv">
-                <img src="img/happy-clients.svg" alt="cap" />
-              </figure>
-              <span class="counter">21</span>
-              <h4>Satisfied client</h4>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="facts-item">
+              <div class="icon">
+                <i class="lni-rocket"></i>
+              </div>
+              <div class="fact-count">
+                <h3><span class="counter">100</span>%</h3>
+                <h4>Faster</h4>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 col-md-4">
-            <div class="single_happy_client">
-              <figure class="_imgDiv">
-                <img src="img/awards.svg" alt="cap" />
-              </figure>
-              <span class="counter">40</span>
-              <h4>Total project</h4>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="facts-item">
+              <div class="icon">
+                <i class="lni-user"></i>
+              </div>
+              <div class="fact-count">
+                <h3><span class="counter">21</span></h3>
+                <h4>Satisfied client</h4>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 col-md-4">
-            <div class="single_happy_client">
-              <figure class="_imgDiv">
-                <img src="img/job-placement.svg" alt="cap" />
-              </figure>
-              <span class="counter">65</span>
-              <h4>work completed</h4>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="facts-item">
+              <div class="icon">
+                <i class="lni-laptop-phone"></i>
+              </div>
+              <div class="fact-count">
+                <h3><span class="counter">40</span>+</h3>
+                <h4>Total project</h4>
+              </div>
             </div>
           </div>
-          <!-- <div class="col-lg-3 col-sm-6">
-                    <div class="single_happy_client">
-                        <figure class="_imgDiv"><img src="img/project-done.svg" alt="cap" /></figure>
-                        <span class="counter">95</span>
-                        <h4>work<br />completed</h4>
-                    </div>
-                </div> -->
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="facts-item">
+              <div class="icon">
+                <i class="lni-code"></i>
+              </div>
+              <div class="fact-count">
+                <h3><span class="counter">65</span></h3>
+                <h4>work completed</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter Section End -->
+
+    <!-- Testimonial Section Start -->
+    <section class="review section" id="review">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Reviews</h2>
+          <span>Reviews</span>
+          <p class="section-subtitle">
+            Important reviews from clients about our company.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="reviews" class="touch-slider owl-carousel">
+              <div class="item text-center">
+                <img src="img/reviews/1.png" width="600" alt="" />
+              </div>
+              <div class="item text-center">
+                <img src="img/reviews/2.png" width="600" alt="" />
+              </div>
+              <div class="item text-center">
+                <img src="img/reviews/3.png" width="600" alt="" />
+              </div>
+              
+              <div class="item text-center">
+                <img src="img/reviews/4.png" width="600" alt="" />
+              </div>
+              
+              <div class="item text-center">
+                <img src="img/reviews/5.png" width="600" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- happy_client counter end -->
+    <!-- Testimonial Section End -->
 
-    <!--::review_part start::-->
-    <section class="review_part padding_top">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-lg-5">
-            <div class="section_tittle text-center">
-              <p>What Clients Says About Us</p>
-              <h2>Testimonial</h2>
-            </div>
-          </div>
+    <!-- Testimonial Section Start -->
+    <section class="testimonial section" id="testimonial">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Testimonial</h2>
+          <span>Testimonial</span>
+          <p class="section-subtitle">
+            What Clients Says About Us
+          </p>
         </div>
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <div class="intro_video_bg">
-              <!-- <div class="intro_video_iner text-center">
-                            <div class="intro_video_icon">
-                                <a id="play-video_1" class="video-play-button popup-youtube" href="https://www.youtube.com/watch?v=pBFQdxA-apI">
-                                    <span class="ti-control-play"></span>
-                                </a>
-                            </div>
-                            <p>Watch intro video</p>
-                        </div> -->
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-5">
-            <div class="review_text_item">
-              <div class="row">
-                <div class="col-lg-7 col-sm-8">
-                  <div class="owl-carousel owl-theme" id="sync2">
-                    <div class="owl-thumb-item">
-                      <div class="slider-thumbnails">
-                        <img
-                          src="img/client/trevor.jpeg"
-                          alt="slideimg"
-                          class="image"
-                          style="border-radius: 50%"
-                        />
-                      </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="testimonials" class="touch-slider owl-carousel">
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="author">
+                    <div class="img-thumb">
+                      <img src="img/testimonial/trevor.jpeg" alt="" />
                     </div>
-                    <div class="owl-thumb-item">
-                      <div class="slider-thumbnails" style="padding: 5%">
-                        <img
-                          src="img/client/darren.jpg"
-                          alt="slideimg"
-                          class="image"
-                          style="border-radius: 50%"
-                        />
-                      </div>
+                    <div class="author-info">
+                      <h2><a href="#">Trevor White</a></h2>
+                      <span>Founder, CoachFirst</span>
                     </div>
-                    <!-- <div class="owl-thumb-item">
-                                        <div class="slider-thumbnails">
-                                            <img src="img/client/client_3.png" alt="slideimg" class="image" />
-                                        </div>
-                                    </div>-->
                   </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="slider owl-carousel owl-theme" id="sync1">
-                    <div class="client_review_text">
-                      <p>
-                        The team at Yeasitech are highly skilled and very
-                        responsive. They have been great communicators, working
-                        closely as a team and I’ve seen our partnership continue
-                        to build
-                      </p>
-                      <img src="img/client/client_logo.png" alt="#" />
-                      <div class="client_info">
-                        <h3>Trevor White</h3>
-                        <h5>Founder, CoachFirst</h5>
-                      </div>
-                    </div>
-                    <div class="client_review_text">
-                      <p>
-                        We’ve been dealing with Kazi professionally for over 2
-                        years now and can not fault him. He is extremely well
-                        versed in eCommerce work, mobile app development and
-                        overall providing solutions for modern day issues when
-                        it comes to Magento, Mern Stack , PHP and most web
-                        platforms we’ve asked for his help with. Highly
-                        recommend Kazi if you’re looking to further your
-                        projects or business!
-                      </p>
-                      <img src="img/client/darren.jpg" alt="#" />
-                      <div class="client_info">
-                        <h3>Darren Howard</h3>
-                        <h5>Director, Cohesion</h5>
-                      </div>
-                    </div>
+                  <div class="content-inner">
+                    <p class="description">                      
+                      The team at Yeasitech are highly skilled and very
+                      responsive. They have been great communicators, working
+                      closely as a team and I’ve seen our partnership continue
+                      to build                    
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--::blog_part end::-->
-
-    <!-- portfolio_part start-->
-
-    <!-- team_member part start-->
-    <section class="team_member_section section_padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-6">
-            <div class="single_team_member">
-              <img src="img/team/team-1.jpg" alt="" />
-              <div class="single_team_text">
-                <h3><a href="#"> Kazi Hasan Ali</a></h3>
-                <p>Founder & CEO</p>
-                <div class="team_member_social_icon">
-                  <a href="#">facebok</a>
-                  <a href="#">twitter</a>
-                  <a href="#">skype</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="single_team_member">
-              <img src="img/team/team-2.jpg" alt="" />
-              <div class="single_team_text">
-                <h3><a href="#">Manowar Iqbal Layek</a></h3>
-                <p>Full stack developer</p>
-                <div class="team_member_social_icon">
-                  <a href="#">facebok</a>
-                  <a href="#">twitter</a>
-                  <a href="#">skype</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-lg-4 col-sm-6">
-                    <div class="single_team_member">
-                        <img src="img/team/team-3.jpg" alt="" />
-                        <div class="single_team_text">
-                            <h3><a href="#">Mainak Shil</a></h3>
-                            <p>Web developer</p>
-                            <div class="team_member_social_icon">
-                                <a href="#">facebok</a>
-                                <a href="#">twitter</a>
-                                <a href="#">skype</a>
-                            </div>
-                        </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="author">
+                    <div class="img-thumb">
+                      <img src="img/testimonial/darren.jpg" alt="" />
                     </div>
-                </div> -->
-        </div>
-      </div>
-    </section>
-    <!-- team_member part end-->
-
-    <!--::blog_part start::-->
-    <section class="blog_part section_padding" style="display: none">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-5">
-            <div class="section_tittle text-center">
-              <p>Latest news</p>
-              <h2>We Have True Story</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 col-xl-4 d-none d-sm-block d-lg-none">
-            <div class="single-home-blog">
-              <div class="card">
-                <img
-                  src="img/blog/blog_3.png"
-                  class="card-img-top"
-                  alt="blog"
-                />
-                <div class="card-body">
-                  <a href="blog.html">Art, design</a> |
-                  <span> March 30, 2019</span>
-                  <a href="blog.html">
-                    <h5 class="card-title">
-                      Seasons form upon days may wont bring given herb sixth
-                    </h5>
-                  </a>
-                  <ul>
-                    <li><i class="ti-comments"></i>4 Comments</li>
-                    <li><i class="ti-eye"></i>10 View</li>
-                  </ul>
+                    <div class="author-info">
+                      <h2><a href="#">Darren Howard</a></h2>
+                      <span>Director, Cohesion</span>
+                    </div>
+                  </div>
+                  <div class="content-inner">
+                    <p class="description">                      
+                      We’ve been dealing with Kazi professionally for over 2
+                      years now and can not fault him. He is extremely well
+                      versed in eCommerce work, mobile app development and
+                      overall providing solutions for modern day issues when
+                      it comes to Magento, Mern Stack , PHP and most web
+                      platforms we’ve asked for his help with. Highly
+                      recommend Kazi if you’re looking to further your
+                      projects or business!                    
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-4">
-            <div class="single-home-blog">
-              <div class="card">
-                <img
-                  src="img/blog/blog_1.png"
-                  class="card-img-top"
-                  alt="blog"
-                />
-                <div class="card-body">
-                  <a href="blog.html">Technology</a> |
-                  <span> March 30, 2019</span>
-                  <a href="blog.html">
-                    <h5 class="card-title">
-                      Seasons form upon days may wont bring given herb sixth
-                    </h5>
-                  </a>
-                  <ul>
-                    <li><i class="ti-comments"></i>4 Comments</li>
-                    <li><i class="ti-eye"></i>10 View</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-4">
-            <div class="single-home-blog">
-              <div class="card">
-                <img
-                  src="img/blog/blog_2.png"
-                  class="card-img-top"
-                  alt="blog"
-                />
-                <div class="card-body">
-                  <a href="blog.html">Technology</a> |
-                  <span> March 30, 2019</span>
-                  <a href="blog.html">
-                    <h5 class="card-title">
-                      Very and third him beginning signs hath subdue make
-                    </h5>
-                  </a>
-                  <ul>
-                    <li><i class="ti-comments"></i>4 Comments</li>
-                    <li><i class="ti-eye"></i>10 View</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-4">
-            <div class="single-home-blog">
-              <div class="card">
-                <img
-                  src="img/blog/blog_3.png"
-                  class="card-img-top"
-                  alt="blog"
-                />
-                <div class="card-body">
-                  <a href="blog.html">Technology</a> |
-                  <span> March 30, 2019</span>
-                  <a href="blog.html">
-                    <h5 class="card-title">
-                      Seasons form upon days may wont bring given herb sixth
-                    </h5>
-                  </a>
-                  <ul>
-                    <li><i class="ti-comments"></i>4 Comments</li>
-                    <li><i class="ti-eye"></i>10 View</li>
-                  </ul>
-                </div>
-              </div>
+              </div>              
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--::blog_part end::-->
+    <!-- Testimonial Section End -->
 
-    <!-- footer part start-->
-    <footer class="footer-area _footerWhite">
-      <div class="_footerUpr">
+    <!-- Contact Section Start -->
+    <section id="contact" class="section">
+      <div class="contact-form">
         <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-sm-6 col-md-6 col-xl-3">
-              <div class="single-footer-widget footer_1">
-                <a href="index.html">
-                  <img src="img/footer_logo.jpg" alt="" />
-                </a>
-                <p>
-                  Chinar Park, New Town<br />
-                  kolkata - 136
-                </p>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-8 col-xl-3">
-              <div class="single-footer-widget footer_3">
-                <h4>Quick Links</h4>
-                <ul class="_quickLinks">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="social_icon">
-                  <a
-                    href="https://www.facebook.com/yeasitech"
-                    class="fa fa-facebook"
-                  ></a>
-                  <a
-                    href="https://www.linkedin.com/company/yeasitech"
-                    class="fa fa-linkedin"
-                  ></a>
-                  <a
-                    href="https://www.glassdoor.co.in/Overview/Working-at-Yeasitech-EI_IE4489652.11,20.htm"
-                    class="fa fa-glassdoor"
-                    ><img
-                      src="https://www.glassdoor.co.in/pc-app/static/img/partnerCenter/badges/eng_CIRCLE_64x64.png"
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-xl-4">
-              <div class="single-footer-widget footer_2">
-                <h4>Newsletter</h4>
-                <p>
-                  Stay updated with our latest trends Seed heaven so said place
-                  winged over given forth fruit.
-                </p>
-                <form action="#">
-                  <div class="form-group">
-                    <div class="input-group mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Enter email address"
-                        onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Enter email address'"
-                      />
-                      <div class="input-group-append">
-                        <button class="btn" type="button">
-                          <i class="ti-angle-right"></i>
+          <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <span>Contact</span>
+            <p class="section-subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Dignissimos debitis.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-xs-12">
+              <div class="contact-block">
+                <form id="contactForm">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          placeholder="Your Name"
+                          required
+                          data-error="Please enter your name"
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          placeholder="Your Email"
+                          id="email"
+                          class="form-control"
+                          name="name"
+                          required
+                          data-error="Please enter your email"
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          placeholder="Subject"
+                          id="msg_subject"
+                          class="form-control"
+                          required
+                          data-error="Please enter your subject"
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          placeholder="Your Message"
+                          rows="7"
+                          data-error="Write your message"
+                          required
+                        ></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="submit-button">
+                        <button
+                          class="btn btn-common btn-effect"
+                          id="submit"
+                          type="submit"
+                        >
+                          Send Message
                         </button>
+                        <div id="msgSubmit" class="h3 hidden"></div>
+                        <div class="clearfix"></div>
                       </div>
                     </div>
                   </div>
                 </form>
               </div>
             </div>
+            <div class="col-lg-3 col-md-3 col-xs-12">
+              <div class="contact-deatils">
+                <!-- Content Info -->
+                <div class="contact-info_area">
+                  <div class="contact-info">
+                    <i class="lni-map"></i>
+                    <h5>Location</h5>
+                    <p>Chinar Park, Rajarhat, Kolkata, West Bengal, India</p>
+                  </div>
+                  <!-- Content Info -->
+                  <div class="contact-info">
+                    <i class="lni-star"></i>
+                    <h5>E-mail</h5>
+                    <p>hr@yeasitech.com</p>
+                  </div>
+                  <!-- Content Info -->
+                  <div class="contact-info">
+                    <i class="lni-phone"></i>
+                    <h5>Phone</h5>
+                    <p>+91 8172076625</p>
+                  </div>
+                  <!-- Icon -->
+                  <ul class="footer-social">
+                    <li>
+                      <a class="facebook" href="#"
+                        ><i class="lni-facebook-filled"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="twitter" href="#"
+                        ><i class="lni-twitter-filled"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="linkedin" href="#"
+                        ><i class="lni-linkedin-fill"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="google-plus" href="#"
+                        ><i class="lni-google-plus"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- Contact Section End -->
 
-      <div class="_footerCopyRight">
+    <!-- Map Section Start -->
+    <section id="google-map-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 padding-0">
+            <object
+              style="border: 0; height: 450px; width: 100%"
+              data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.785367106548!2d88.43682466443498!3d22.624488786766893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89e2d6220e56b%3A0x5fa6b254499a5164!2sChinar%20Park%2C%20Rajarhat%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1615483831991!5m2!1sen!2sin"
+            ></object>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Map Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <!-- Copyright Start  -->
+      <div id="copyright">
         <div class="container">
-          <div class="text-center">
-            <p>
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              All rights reserved
-            </p>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="site-info text-center">
+                <p>Copyright © 2021 All rights reserved</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- Copyright End -->
     </footer>
-    <!-- footer part end-->
+    <!-- Footer Section End -->
 
-    <!-- jquery plugins here-->
-    <!-- jquery -->
-    <script src="js/jquery-1.12.1.min.js"></script>
-    <!-- popper js -->
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lni-arrow-up"></i>
+    </a>
+
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
     <script src="js/popper.min.js"></script>
-    <!-- bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- easing js -->
-    <script src="js/jquery.magnific-popup.js"></script>
-    <!-- swiper js -->
-    <script src="js/swiper.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/masonry.pkgd.js"></script>
-    <!-- particles js -->
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/classie.js"></script>
+    <!--    <script src="js/color-switcher.js"></script>-->
+    <script src="js/jquery.mixitup.js"></script>
+    <script src="js/nivo-lightbox.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.vide.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
-    <script src="js/owl.carousel2.thumbs.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/slick.min.js"></script>
-    <!-- custom js -->
-    <script src="js/custom.js"></script>
-    <style>
-      .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-      }
-
-      .fa:hover {
-        opacity: 0.7;
-      }
-
-      .fa-facebook {
-        background: #3b5998;
-        color: white;
-      }
-
-      .fa-glassdoor {
-        background: #4eab43;
-        color: white;
-      }
-
-      .fa-linkedin {
-        background: #007bb5;
-        color: white;
-      }
-    </style>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
