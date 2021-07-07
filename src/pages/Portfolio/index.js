@@ -1,154 +1,67 @@
+/* eslint-disable array-callback-return */
 import PortFolio1 from "../../assets/img/portfolio/img-1.jpg";
-export default function PortFolio() {
+import PortFolio2 from "../../assets/img/portfolio/img-2.jpg";
+import PortFolio3 from "../../assets/img/portfolio/img-3.jpg";
+import PortFolio4 from "../../assets/img/portfolio/img-4.jpg";
+import PortFolio5 from "../../assets/img/portfolio/img-5.jpg";
+import PortFolio6 from "../../assets/img/portfolio/img-6.jpg";
+
+import React from "react";
+import { Card, CardImg } from "reactstrap";
+
+const portfolioData = [
+  { type: "Web", img: PortFolio1 },
+  { type: "App", img: PortFolio2 },
+  { type: "Graphics", img: PortFolio3 },
+  { type: "App", img: PortFolio4 },
+  { type: "Graphics", img: PortFolio5 },
+  { type: "App", img: PortFolio6 },
+];
+
+const Portfolio = (props) => {
   return (
-    <section id="portfolios" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Our Portfolio</h2>
+    <section id="portfolios" className="section">
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">Our Portfolio</h2>
           <span>Portfolio</span>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="controls text-center">
-              <a
-                class="filter active btn btn-common btn-effect"
-                data-filter="all"
-              >
+        <div className="row">
+          <div className="col-md-12">
+            <div className="controls text-center">
+              <button className="filter active btn btn-common btn-effect">
                 All
-              </a>
-              <a class="filter btn btn-common btn-effect" data-filter=".design">
-                App
-              </a>
-              <a
-                class="filter btn btn-common btn-effect"
-                data-filter=".development"
-              >
-                Web
-              </a>
-              <a class="filter btn btn-common btn-effect" data-filter=".print">
+              </button>
+              <button className="filter btn btn-common btn-effect">App</button>
+              <button className="filter btn btn-common btn-effect">Web</button>
+              <button className="filter btn btn-common btn-effect">
                 Graphics
-              </a>
+              </button>
             </div>
           </div>
         </div>
 
-        <div id="portfolio" class="row">
-          <div class="col-lg-4 col-md-6 col-xs-12 mix development">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <img src={PortFolio1} alt="" />
-                <div class="single-content">
-                  <div class="fancy-table">
-                    <div class="table-cell">
-                      <div class="zoom-icon">
-                        <a class="lightbox" href="img/portfolio/img-1.jpg">
-                          <i class="lni-zoom-in item-icon"></i>
-                        </a>
-                      </div>
-                      <a href="#">View Project</a>
-                    </div>
-                  </div>
+        <div id="portfolio" className="row">
+          {portfolioData.map((data) => {
+            return (
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="portfolio-item">
+                  <Card>
+                    <CardImg
+                      top
+                      width="100%"
+                      src={data.img}
+                      alt="Card image cap"
+                    />
+                  </Card>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 mix design">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <img src="img/portfolio/img-2.jpg" alt="" />
-                <div class="single-content">
-                  <div class="fancy-table">
-                    <div class="table-cell">
-                      <div class="zoom-icon">
-                        <a class="lightbox" href="img/portfolio/img-2.jpg">
-                          <i class="lni-zoom-in item-icon"></i>
-                        </a>
-                      </div>
-                      <a href="#">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 mix print">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <img src="img/portfolio/img-3.jpg" alt="" />
-                <div class="single-content">
-                  <div class="fancy-table">
-                    <div class="table-cell">
-                      <div class="zoom-icon">
-                        <a class="lightbox" href="img/portfolio/img-3.jpg">
-                          <i class="lni-zoom-in item-icon"></i>
-                        </a>
-                      </div>
-                      <a href="#">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 mix development design">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <img src="img/portfolio/img-4.jpg" alt="" />
-                <div class="single-content">
-                  <div class="fancy-table">
-                    <div class="table-cell">
-                      <div class="zoom-icon">
-                        <a class="lightbox" href="img/portfolio/img-4.jpg">
-                          <i class="lni-zoom-in item-icon"></i>
-                        </a>
-                      </div>
-                      <a href="#">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 mix print">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <img src="img/portfolio/img-5.jpg" alt="" />
-                <div class="single-content">
-                  <div class="fancy-table">
-                    <div class="table-cell">
-                      <div class="zoom-icon">
-                        <a class="lightbox" href="img/portfolio/img-5.jpg">
-                          <i class="lni-zoom-in item-icon"></i>
-                        </a>
-                      </div>
-                      <a href="#">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 mix design">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <img src="img/portfolio/img-6.jpg" alt="" />
-                <div class="single-content">
-                  <div class="fancy-table">
-                    <div class="table-cell">
-                      <div class="zoom-icon">
-                        <a class="lightbox" href="img/portfolio/img-6.jpg">
-                          <i class="lni-zoom-in item-icon"></i>
-                        </a>
-                      </div>
-                      <a href="#">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Portfolio;

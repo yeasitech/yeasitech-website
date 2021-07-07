@@ -1,20 +1,20 @@
 export default function Services() {
   return (
     <div>
-      <section id="services" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Our Services</h2>
+      <section id="services" className="section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Our Services</h2>
             <span>Services</span>
           </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-xs-12">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-xs-12">
               <div
-                class="item-boxes services-item wow fadeInDown"
+                className="item-boxes services-item wow fadeInDown"
                 data-wow-delay="0.2s"
               >
-                <div class="icon color-1">
-                  <i class="lni-cloud"></i>
+                <div className="icon color-1">
+                  <i className="lni-cloud"></i>
                 </div>
                 <h4>Cloud Architechture</h4>
                 <p>
@@ -24,13 +24,13 @@ export default function Services() {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
+            <div className="col-lg-4 col-md-6 col-xs-12">
               <div
-                class="item-boxes services-item wow fadeInDown"
+                className="item-boxes services-item wow fadeInDown"
                 data-wow-delay="0.4s"
               >
-                <div class="icon color-2">
-                  <i class="lni-cog"></i>
+                <div className="icon color-2">
+                  <i className="lni-cog"></i>
                 </div>
                 <h4>Web Development</h4>
                 <p>
@@ -41,13 +41,13 @@ export default function Services() {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
+            <div className="col-lg-4 col-md-6 col-xs-12">
               <div
-                class="item-boxes services-item wow fadeInDown"
+                className="item-boxes services-item wow fadeInDown"
                 data-wow-delay="0.6s"
               >
-                <div class="icon color-3">
-                  <i class="lni-stats-up"></i>
+                <div className="icon color-3">
+                  <i className="lni-stats-up"></i>
                 </div>
                 <h4>SEO</h4>
                 <p>
@@ -57,13 +57,13 @@ export default function Services() {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
+            <div className="col-lg-4 col-md-6 col-xs-12">
               <div
-                class="item-boxes services-item wow fadeInDown"
+                className="item-boxes services-item wow fadeInDown"
                 data-wow-delay="0.8s"
               >
-                <div class="icon color-4">
-                  <i class="lni-display"></i>
+                <div className="icon color-4">
+                  <i className="lni-display"></i>
                 </div>
                 <h4>UI/UX Design</h4>
                 <p>
@@ -76,13 +76,13 @@ export default function Services() {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
+            <div className="col-lg-4 col-md-6 col-xs-12">
               <div
-                class="item-boxes services-item wow fadeInDown"
+                className="item-boxes services-item wow fadeInDown"
                 data-wow-delay="1s"
               >
-                <div class="icon color-5">
-                  <i class="lni-tab"></i>
+                <div className="icon color-5">
+                  <i className="lni-tab"></i>
                 </div>
                 <h4>Mobile App Development</h4>
                 <p>
@@ -93,13 +93,13 @@ export default function Services() {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
+            <div className="col-lg-4 col-md-6 col-xs-12">
               <div
-                class="item-boxes services-item wow fadeInDown"
+                className="item-boxes services-item wow fadeInDown"
                 data-wow-delay="1.2s"
               >
-                <div class="icon color-6">
-                  <i class="lni-briefcase"></i>
+                <div className="icon color-6">
+                  <i className="lni-briefcase"></i>
                 </div>
                 <h4>Digital Marketing</h4>
                 <p>
