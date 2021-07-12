@@ -1,4 +1,93 @@
-export default function Contact() {
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import SweetAlert from "sweetalert-react";
+import "sweetalert/dist/sweetalert.css";
+
+const ContactUs = (props) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [show, setShow] = useState(false);
+  const [popUpMsg, setPopUpMsg] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const _validation = () => {
+    if (
+      name.length == 0 ||
+      email.length == 0 ||
+      subject.length == 0 ||
+      message.length == 0
+    ) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+
+  const resetValue = () => {
+    setName("");
+    setEmail("");
+    setSubject("");
+    setEmail("");
+    setMessage("");
+    setShow(false);
+  };
+
+  const hideAlert = () => {
+    setShow(false);
+  };
+
+  const toast = (msg) => {
+    console.log("message", msg);
+    setPopUpMsg(msg);
+    setShow(true);
+  };
+
+  const onSubmit = async (e) => {
+    try {
+      setLoading(true);
+      e.preventDefault();
+      console.log("State", name, email, message, subject);
+      let validation = await _validation();
+      if (validation) {
+        let res = await axios.post(
+          "https://sqvk72blwd.execute-api.us-east-2.amazonaws.com/default/sendEmailContact",
+          {
+            name: name,
+            email: email,
+            subject: subject,
+            message: message,
+          }
+        );
+
+        if (res.status === 200) {
+          resetValue();
+          setTimeout(() => setLoading(false), 1000);
+          setTimeout(
+            () =>
+              toast("Thanks for reaching to us , we will get back to you soon"),
+            1000
+          );
+        }
+      } else {
+        setTimeout(() => setLoading(false), 1000);
+        setTimeout(() => toast("Please fill all the fields"), 1000);
+      }
+    } catch (error) {
+      setTimeout(() => setLoading(false), 1000);
+      console.log(error.message);
+      setTimeout(
+        () => toast("Error while sending the message. Try Again"),
+        1000
+      );
+    }
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section id="contact" className="section">
       <div className="contact-form">
@@ -6,10 +95,6 @@ export default function Contact() {
           <div className="section-header">
             <h2 className="section-title">Get In Touch</h2>
             <span>Contact</span>
-            <p className="section-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos debitis.
-            </p>
           </div>
           <div className="row">
             <div className="col-lg-9 col-md-9 col-xs-12">
@@ -26,6 +111,7 @@ export default function Contact() {
                           placeholder="Your Name"
                           required
                           data-error="Please enter your name"
+                          onChange={(e) => setName(e.target.value)}
                         />
                         <div className="help-block with-errors"></div>
                       </div>
@@ -33,13 +119,13 @@ export default function Contact() {
                     <div className="col-md-6">
                       <div className="form-group">
                         <input
-                          type="text"
+                          type="email"
                           placeholder="Your Email"
-                          id="email"
                           className="form-control"
                           name="name"
                           required
                           data-error="Please enter your email"
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                         <div className="help-block with-errors"></div>
                       </div>
@@ -53,6 +139,7 @@ export default function Contact() {
                           className="form-control"
                           required
                           data-error="Please enter your subject"
+                          onChange={(e) => setSubject(e.target.value)}
                         />
                         <div className="help-block with-errors"></div>
                       </div>
@@ -66,16 +153,16 @@ export default function Contact() {
                           rows="7"
                           data-error="Write your message"
                           required
+                          onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
                         <div className="help-block with-errors"></div>
                       </div>
                       <div className="submit-button">
                         <button
                           className="btn btn-common btn-effect"
-                          id="submit"
-                          type="submit"
+                          onClick={onSubmit}
                         >
-                          Send Message
+                          {!loading ? "Send Message" : "Loading.."}
                         </button>
                         <div id="msgSubmit" className="h3 hidden"></div>
                         <div className="clearfix"></div>
@@ -135,6 +222,15 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <div>
+        <SweetAlert
+          show={show}
+          title="YeasiTech"
+          text={popUpMsg}
+          onConfirm={hideAlert}
+        />
+      </div>
     </section>
   );
-}
+};
+export default ContactUs;
