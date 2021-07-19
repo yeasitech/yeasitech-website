@@ -12,7 +12,7 @@ const ContactUs = (props) => {
   const [message, setMessage] = useState("");
   const [show, setShow] = useState(false);
   const [popUpMsg, setPopUpMsg] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const _validation = () => {
     if (
@@ -96,7 +96,7 @@ const ContactUs = (props) => {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">Get In Touch</h2>
-            <p style={{fontSize:'1.1rem'}}>Contact Us</p>
+            <p style={{ fontSize: "1.1rem" }}>Contact Us</p>
           </div>
           <div className="row">
             <div className="col-lg-9 col-md-9 col-xs-12">
@@ -164,8 +164,9 @@ const ContactUs = (props) => {
                           className="btn btn-common btn-effect"
                           onClick={onSubmit}
                         >
-                          {!loading ? "Submit" : "Loading.."}
+                          {!loading ? "Submit" : "Loading..."}
                         </button>
+                        <div className="loader">Loading...</div>
                         <div id="msgSubmit" className="h3 hidden"></div>
                         <div className="clearfix"></div>
                       </div>

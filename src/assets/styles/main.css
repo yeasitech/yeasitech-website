@@ -6,8 +6,8 @@
    2. GENERAL
    ========================================================================== */
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #546E7A;
+  font-family: "Open Sans", sans-serif;
+  color: #546e7a;
   font-size: 14px;
   font-weight: 400;
   background: #fff;
@@ -20,13 +20,14 @@ html {
 
 p {
   font-size: 14px;
-  color: #546E7A;
+  color: #546e7a;
   line-height: 26px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 0;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #6a95d0;
 }
 
@@ -38,8 +39,12 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
   color: #263238;
@@ -64,7 +69,8 @@ a:not([href]):not([tabindex]) {
   color: #fff;
 }
 
-a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
   color: #fff;
 }
 
@@ -94,14 +100,14 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   font-size: 36px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #263238;
   position: relative;
 }
 
 .section-header .section-title:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -8px;
   width: 80px;
@@ -116,7 +122,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   font-size: 60px;
   color: rgba(0, 0, 0, 0.07);
   z-index: 2;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-transform: capitalize;
   position: absolute;
@@ -166,7 +172,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .btn-effect:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 100%;
@@ -252,80 +258,83 @@ button:focus {
 }
 
 .facebook a {
-  color: #4867AA;
+  color: #4867aa;
 }
 
 .facebook a:hover {
-  background: #4867AA;
+  background: #4867aa;
 }
 
 .twitter a {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .twitter a:hover {
-  background: #1DA1F2;
+  background: #1da1f2;
 }
 
 .google-plus a {
-  color: #DD4D42;
+  color: #dd4d42;
 }
 
 .google-plus a:hover {
-  background: #DD4D42;
+  background: #dd4d42;
 }
 
 .youtube a {
-  color: #DF2926;
+  color: #df2926;
 }
 
 .youtube a:hover {
-  background: #DF2926;
+  background: #df2926;
 }
 
 .linkedin a {
-  color: #007BB6;
+  color: #007bb6;
 }
 
 .linkedin a:hover {
-  background: #007BB6;
+  background: #007bb6;
 }
 
 .pinterest a {
-  color: #BD081C;
+  color: #bd081c;
 }
 
 .pinterest a:hover {
-  background: #BD081C;
+  background: #bd081c;
 }
 
 .dribbble a {
-  color: #EA4C89;
+  color: #ea4c89;
 }
 
 .dribbble a:hover {
-  background: #EA4C89;
+  background: #ea4c89;
 }
 
 .behance a {
-  color: #0B7CFF;
+  color: #0b7cff;
 }
 
 .behance a:hover {
-  background: #0B7CFF;
+  background: #0b7cff;
 }
 
 /* ==========================================================================
    2.4  Pre Loader
    ========================================================================== */
-#loader {
+
+.loader {
   position: fixed;
-  top: 0;
-  left: 0;
+  opacity: 0.5;
+  left: 0px;
+  top: 0px;
   width: 100%;
   height: 100%;
-  background: #263238;
-  z-index: 9999999999;
+  z-index: 9999;
+  background: url("//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phi_fenomeni.gif/50px-Phi_fenomeni.gif")
+    50% 50% no-repeat rgb(249, 249, 249);
 }
 
 .spinner {
@@ -336,7 +345,8 @@ button:focus {
   margin: 0px auto;
 }
 
-.double-bounce1, .double-bounce2 {
+.double-bounce1,
+.double-bounce2 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -345,17 +355,18 @@ button:focus {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
 }
 
 .double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
 }
 
 @-webkit-keyframes sk-bounce {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: scale(0);
   }
   50% {
@@ -364,7 +375,8 @@ button:focus {
 }
 
 @keyframes sk-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(0);
     -webkit-transform: scale(0);
   }
@@ -528,7 +540,7 @@ button:focus {
 }
 
 .navbar-expand-md .navbar-nav .nav-link:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -756,7 +768,7 @@ button:focus {
 }
 
 .hero-area-2 .contents .tag-type ul li:before {
-  content: '';
+  content: "";
   width: 4px;
   height: 4px;
   background: #fff;
@@ -775,7 +787,7 @@ button:focus {
 }
 
 .hero-area-2 .contents .tag-type ul:before {
-  content: '';
+  content: "";
   width: 40px;
   height: 1px;
   background: #f1f1f1;
@@ -785,7 +797,7 @@ button:focus {
 }
 
 .hero-area-2 .contents .tag-type ul:after {
-  content: '';
+  content: "";
   width: 40px;
   height: 1px;
   background: #f1f1f1;
@@ -943,16 +955,16 @@ button:focus {
 #clients .client-item-wrapper {
   text-align: center;
   margin: 0 5px;
-  -moz-transition: all .6s ease;
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 #clients #clients-scroller img:hover {
-  -moz-transition: all .6s ease;
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
-  opacity: 1.0;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  opacity: 1;
 }
 
 #clients #clients-scroller .owl-pagination {
@@ -1085,7 +1097,7 @@ button:focus {
 
 .shot-item .single-content {
   background-color: rgba(22, 26, 39, 0.7);
-  opacity: 0.90;
+  opacity: 0.9;
   height: 100%;
   left: 0;
   opacity: 0;
@@ -1181,7 +1193,7 @@ button:focus {
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-   min-height: 360px;
+  min-height: 360px;
 }
 
 .services-item .icon {
@@ -1209,33 +1221,33 @@ button:focus {
 }
 
 .services-item .color-1 i {
-  background: #FAE3E3;
-  color: #D82928 !important;
+  background: #fae3e3;
+  color: #d82928 !important;
 }
 
 .services-item .color-2 i {
-  background: #E6F8ED;
-  color: #57D283 !important;
+  background: #e6f8ed;
+  color: #57d283 !important;
 }
 
 .services-item .color-3 i {
-  background: #E3EAFA;
-  color: #457BF4 !important;
+  background: #e3eafa;
+  color: #457bf4 !important;
 }
 
 .services-item .color-4 i {
-  background: #F3EAD6;
+  background: #f3ead6;
   color: #f1a90a !important;
 }
 
 .services-item .color-5 i {
-  background: #E7E6FF;
-  color: #7271FF !important;
+  background: #e7e6ff;
+  color: #7271ff !important;
 }
 
 .services-item .color-6 i {
-  background: #DEDEDE;
-  color: #35393D !important;
+  background: #dedede;
+  color: #35393d !important;
 }
 
 .services-item .services-content {
@@ -1566,7 +1578,8 @@ button:focus {
   -o-transition: all 0.4s ease-in-out;
 }
 
-.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
   background: #6a95d0;
 }
 
@@ -1580,7 +1593,7 @@ button:focus {
   border: 1px solid #eaeaea;
   text-align: center;
   border-radius: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1594,7 +1607,7 @@ button:focus {
 
 .pricing-table .pricing-details h2 {
   font-size: 18px;
-  color: #546E7A;
+  color: #546e7a;
   font-weight: 500;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1615,7 +1628,7 @@ button:focus {
   font-size: 12px;
   line-height: 15px;
   font-weight: 400;
-  color: #A2A2A2;
+  color: #a2a2a2;
 }
 
 .pricing-table .pricing-details ul li {
@@ -1701,11 +1714,13 @@ button:focus {
   animation-name: fadeIn;
 }
 
-#carousel-area .carousel-control-next, #carousel-area .carousel-control-prev {
+#carousel-area .carousel-control-next,
+#carousel-area .carousel-control-prev {
   opacity: 1;
 }
 
-#carousel-area .carousel-control-next i, #carousel-area .carousel-control-prev i {
+#carousel-area .carousel-control-next i,
+#carousel-area .carousel-control-prev i {
   width: 48px;
   line-height: 48px;
   height: 48px;
@@ -1720,7 +1735,8 @@ button:focus {
   transition: all 0.2s linear;
 }
 
-#carousel-area .carousel-control-next i:hover, #carousel-area .carousel-control-prev i:hover {
+#carousel-area .carousel-control-next i:hover,
+#carousel-area .carousel-control-prev i:hover {
   opacity: 0.9;
 }
 
@@ -1851,7 +1867,7 @@ button:focus {
    ========================================================================== */
 #blog-single {
   padding: 80px 0;
-  background: #ECF0F1;
+  background: #ecf0f1;
 }
 
 #blog-single .blog-post {
@@ -1908,7 +1924,7 @@ button:focus {
   padding: 5px;
   border-radius: 3px;
   background: #ffffff;
-  border: 1px dashed #346AFE;
+  border: 1px dashed #346afe;
 }
 
 .blog-comment .comment-author {
@@ -1966,7 +1982,8 @@ button:focus {
   box-shadow: none;
 }
 
-.btn.disabled, .btn:disabled {
+.btn.disabled,
+.btn:disabled {
   opacity: 1;
 }
 
@@ -2187,7 +2204,7 @@ textarea {
 footer .footer-Content {
   background-color: #ffffff;
   padding: 60px 0;
-  color: #546E7A;
+  color: #546e7a;
 }
 
 .textwidget {
@@ -2197,7 +2214,7 @@ footer .footer-Content {
 }
 
 .textwidget p {
-  color: #546E7A;
+  color: #546e7a;
 }
 
 footer .menu {
@@ -2209,7 +2226,7 @@ footer .menu li {
 }
 
 footer .menu li a {
-  color: #546E7A;
+  color: #546e7a;
 }
 
 footer .menu li a:hover {
@@ -2237,7 +2254,7 @@ footer .menu li a:hover {
 }
 
 .contact-footer li span a {
-  color: #546E7A;
+  color: #546e7a;
 }
 
 .contact-footer li span a:hover {
@@ -2274,9 +2291,9 @@ footer .menu li a:hover {
   text-align: center;
   width: 32px;
   display: inline-block;
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .footer-social li .facebook:hover {
@@ -2299,7 +2316,7 @@ footer .menu li a:hover {
   background-color: #ffffff;
   padding: 20px 0 10px;
   border-top: 1px solid #eaeaea;
-  color: #546E7A;
+  color: #546e7a;
 }
 
 #copyright p {
@@ -2308,7 +2325,7 @@ footer .menu li a:hover {
 }
 
 #copyright p a {
-  color: #546E7A;
+  color: #546e7a;
 }
 
 #copyright p a:hover {
@@ -2316,7 +2333,7 @@ footer .menu li a:hover {
 }
 
 #copyright .nav-inline .nav-link {
-  color: #546E7A;
+  color: #546e7a;
   padding: 10px 0;
   margin-left: 10px;
 }
@@ -2391,6 +2408,12 @@ footer .menu li a:hover {
   margin-bottom: 0;
 }
 
-#more {display: none;}
-.hidden { display: none;}
-.readmore { margin: 0 5px;}
+#more {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.readmore {
+  margin: 0 5px;
+}
