@@ -2,7 +2,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import OwlCarousel from "../../components/OwlCarousel";
 import Services from "../Services";
-import Features from "../Features";
+// import Features from "../Features";
 import PortFolio from "../Portfolio";
 import Achievements from "../Acievements";
 import Reviews from "../Reviews";
@@ -16,12 +16,12 @@ export default function Home() {
       <Header />
       <OwlCarousel />
       <Services />
-      <Features />
+      {/* <Features /> */}
       <PortFolio />
       <Achievements />
       <Reviews />
-      <Contact />
       <Testimonial />
+      <Contact />
       <Map />
       <Footer />
     </div>

@@ -1,11 +1,31 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
 import reviewImage1 from "../../assets/img/reviews/1.png";
 import reviewImage2 from "../../assets/img/reviews/2.png";
 import reviewImage3 from "../../assets/img/reviews/3.png";
 import reviewImage4 from "../../assets/img/reviews/4.png";
 import reviewImage5 from "../../assets/img/reviews/5.png";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 1,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 export default function Reviews() {
   return (
@@ -19,8 +39,12 @@ export default function Reviews() {
           </p>
         </div>
         <div className="row">
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <Carousel>
+          <div class="carousel-inner" role="listbox">
+            <Carousel
+              responsive={responsive}
+              infiniteLoop={true}
+              autoPlay={true}
+            >
               <div className="item text-center">
                 <img src={reviewImage1} width="600" alt="" />
               </div>

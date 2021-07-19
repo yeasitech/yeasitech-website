@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 export default function Map() {
   return (
     <section id="google-map-area">

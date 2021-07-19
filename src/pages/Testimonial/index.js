@@ -1,7 +1,29 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import reviewImage1 from "../../assets/img/testimonial/trevor.jpeg";
 import reviewImage2 from "../../assets/img/testimonial/darren.jpg";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 2
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 2
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
 
 export default function Testimonial() {
   return (
@@ -14,7 +36,10 @@ export default function Testimonial() {
         </div>
         <div className="row">
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <Carousel>
+          <Carousel responsive={responsive}
+              infiniteLoop={true}
+              autoPlay={true}
+            >
               <div className="item">
                 <div className="testimonial-item">
                   <div className="author">
@@ -37,7 +62,7 @@ export default function Testimonial() {
                     </p>
                   </div>
                 </div>
-              </div>
+                </div>
               <div className="item">
                 <div className="testimonial-item">
                   <div className="author">

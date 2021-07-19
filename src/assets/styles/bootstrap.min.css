@@ -532,6 +532,13 @@ pre code {
   margin-right: -15px;
   margin-left: -15px;
 }
+.rowReview {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 250px;
+}
 .no-gutters {
   margin-right: 0;
   margin-left: 0;

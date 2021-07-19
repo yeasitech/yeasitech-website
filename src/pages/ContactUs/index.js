@@ -1,3 +1,5 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import SweetAlert from "sweetalert-react";
@@ -94,7 +96,7 @@ const ContactUs = (props) => {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">Get In Touch</h2>
-            <span>Contact</span>
+            <p style={{fontSize:'1.1rem'}}>Contact Us</p>
           </div>
           <div className="row">
             <div className="col-lg-9 col-md-9 col-xs-12">
@@ -162,7 +164,7 @@ const ContactUs = (props) => {
                           className="btn btn-common btn-effect"
                           onClick={onSubmit}
                         >
-                          {!loading ? "Send Message" : "Loading.."}
+                          {!loading ? "Submit" : "Loading.."}
                         </button>
                         <div id="msgSubmit" className="h3 hidden"></div>
                         <div className="clearfix"></div>
