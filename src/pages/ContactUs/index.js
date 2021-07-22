@@ -12,7 +12,7 @@ const ContactUs = (props) => {
   const [message, setMessage] = useState("");
   const [show, setShow] = useState(false);
   const [popUpMsg, setPopUpMsg] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const _validation = () => {
     if (
