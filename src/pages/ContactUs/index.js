@@ -33,7 +33,6 @@ const ContactUs = (props) => {
     setSubject("");
     setEmail("");
     setMessage("");
-    setShow(false);
   };
 
   const hideAlert = () => {
@@ -52,6 +51,7 @@ const ContactUs = (props) => {
       e.preventDefault();
       console.log("State", name, email, message, subject);
       let validation = await _validation();
+
       if (validation) {
         let res = await axios.post(
           "https://sqvk72blwd.execute-api.us-east-2.amazonaws.com/default/sendEmailContact",
@@ -62,9 +62,8 @@ const ContactUs = (props) => {
             message: message,
           }
         );
-
+        resetValue();
         if (res.status === 200) {
-          resetValue();
           setTimeout(() => setLoading(false), 1000);
           setTimeout(
             () =>
@@ -113,6 +112,7 @@ const ContactUs = (props) => {
                           placeholder="Your Name"
                           required
                           data-error="Please enter your name"
+                          value={name}
                           onChange={(e) => setName(e.target.value)}
                         />
                         <div className="help-block with-errors"></div>
@@ -127,6 +127,7 @@ const ContactUs = (props) => {
                           name="name"
                           required
                           data-error="Please enter your email"
+                          value={email}
                           onChange={(e) => setEmail(e.target.value)}
                         />
                         <div className="help-block with-errors"></div>
@@ -141,6 +142,7 @@ const ContactUs = (props) => {
                           className="form-control"
                           required
                           data-error="Please enter your subject"
+                          value={subject}
                           onChange={(e) => setSubject(e.target.value)}
                         />
                         <div className="help-block with-errors"></div>
@@ -155,6 +157,7 @@ const ContactUs = (props) => {
                           rows="7"
                           data-error="Write your message"
                           required
+                          value={message}
                           onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
                         <div className="help-block with-errors"></div>
@@ -166,7 +169,7 @@ const ContactUs = (props) => {
                         >
                           {!loading ? "Submit" : "Loading..."}
                         </button>
-                        <div className="loader">Loading...</div>
+                        {loading ? <div className="loader" /> : null}
                         <div id="msgSubmit" className="h3 hidden"></div>
                         <div className="clearfix"></div>
                       </div>
