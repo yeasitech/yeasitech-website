@@ -31,11 +31,11 @@ export default function Header() {
                   Services
                 </a>
               </li>
-              <li class="nav-item">
+              {/* <li class="nav-item">
                 <a class="nav-link page-scroll" href="#features">
                   Features
                 </a>
-              </li>
+              </li> */}
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#portfolios">
                   Portfolio
