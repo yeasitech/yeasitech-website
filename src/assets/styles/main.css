@@ -2417,3 +2417,10 @@ footer .menu li a:hover {
 .readmore {
   margin: 0 5px;
 }
+.homaPageH1 {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}

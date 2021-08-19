@@ -10,13 +10,26 @@ import Contact from "../ContactUs";
 import Testimonial from "../Testimonial";
 import Map from "../Map";
 
+import { Helmet } from "react-helmet";
+
 export default function Home() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Yeasi Tech</title>
+        <meta name="desciption" content="" />
+        <meta
+          name="keywords"
+          content="web development company, web development agency, web app design, Mobile App development, Digital Marketing"
+        />
+      </Helmet>
       <Header />
       <OwlCarousel />
+
       <Services />
       {/* <Features /> */}
+
       <PortFolio />
       <Achievements />
       <Reviews />

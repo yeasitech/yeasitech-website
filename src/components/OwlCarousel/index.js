@@ -30,7 +30,7 @@ class OwlCarousel extends React.Component {
         <div class="carousel-inner" role="listbox">
           <Carousel responsive={responsive} infiniteLoop={true} autoPlay={true}>
             <div class="carousel-item active">
-              <img src={bannerImage1} alt="" />
+              <img src={bannerImage1} alt="mobile app development" />
               <div class="carousel-caption text-center">
                 <h3 class="wow fadeInRight" data-wow-delay="0.2s">
                   Mobile App
@@ -38,13 +38,16 @@ class OwlCarousel extends React.Component {
                 <h2 class="wow fadeInRight" data-wow-delay="0.4s">
                   Development
                 </h2>
-                <h4 class="wow fadeInRight" data-wow-delay="0.6s">
+                {/* <h4 class="wow fadeInRight" data-wow-delay="0.6s">
                   Comes with All Essential Sections & Elements
-                </h4>
+                </h4> */}
+                <h1 className="homaPageH1">
+                  Yeasitech Web App & Mobile App Development
+                </h1>
               </div>
             </div>
             <div class="carousel-item active">
-              <img src={bannerImage1} alt="" />
+              <img src={bannerImage1} alt="mobile app development" />
               <div class="carousel-caption text-center">
                 <h3 class="wow fadeInRight" data-wow-delay="0.2s">
                   Ecommerce
@@ -58,7 +61,7 @@ class OwlCarousel extends React.Component {
               </div>
             </div>
             <div class="carousel-item active">
-              <img src={bannerImage1} alt="" />
+              <img src={bannerImage1} alt="mobile app development" />
               <div class="carousel-caption text-center">
                 <h3 class="wow fadeInDown" data-wow-delay="0.3s">
                   Ready For
